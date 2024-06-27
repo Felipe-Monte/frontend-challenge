@@ -1,5 +1,5 @@
 import { Header } from "@/components/header/index";
-import "./globals.css";
+import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 
