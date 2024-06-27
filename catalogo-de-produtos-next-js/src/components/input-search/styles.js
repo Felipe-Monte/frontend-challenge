@@ -1,6 +1,4 @@
 import { styled } from "styled-components"
-import { SearchIcon } from "./search-icon"
-import { InputHTMLAttributes } from "react"
 
 export const InputSearch = styled.input`
   width: 352px;
@@ -19,7 +17,7 @@ export const InputSearch = styled.input`
   color: var(--text-dark);
 `
 
-const InputContainer = styled.div`
+export const InputContainer = styled.div`
   position: relative;
   width: 352px;
 
@@ -34,14 +32,3 @@ const InputContainer = styled.div`
     transform: translateY(-50%);
   }
 `
-/* PASSANDO PROPRIEDADES DO INPUT PARA UMA DIV NORMAL */
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
-
-export function PrimaryInputSearchWithIcon(props: InputProps){
-  return(
-    <InputContainer>
-      <InputSearch {...props}/>
-      <SearchIcon/>
-    </InputContainer>
-  )
-}
