@@ -24,8 +24,8 @@ export const InputContainer = styled.div`
   svg {
     position: absolute;
 
-    width: 22px;
-    height: 22px;
+    width: 22px !important;
+    height: 22px !important;
 
     right: 20px;
     top: 50%;

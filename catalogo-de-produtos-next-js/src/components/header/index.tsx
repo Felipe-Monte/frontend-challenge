@@ -6,6 +6,7 @@ import { SairaStencil } from "./styles";
 
 import { ContainerHeader } from "./styles"
 import { Logo } from "./styles";
+import { CartCounter } from "../cart-counter";
 
 interface HeaderProps {}
 
@@ -16,6 +17,7 @@ export function Header(props: HeaderProps){
 
       <div>
         <PrimaryInputSearchWithIcon placeholder="Procurando por algo específico?"/>
+        <CartCounter/>
       </div>
 
     </ContainerHeader>
