@@ -1,14 +1,17 @@
+"use client"
 import { FilterList } from "./styles"
-import { FilterItems } from "./styles"
+import { FilterItem } from "./styles"
 
-interface FilterByTypesProps {}
+export interface FilterItemProps {
+  selected: boolean
+}
 
-export function FilterByType(props: FilterByTypesProps){
+export function FilterByType(){
   return(
     <FilterList>
-      <FilterItems>Todos os produtos</FilterItems>
-      <FilterItems>Camisetas</FilterItems>
-      <FilterItems>Canecas</FilterItems>
+      <FilterItem selected>Todos os produtos</FilterItem>
+      <FilterItem selected={false}>Camisetas</FilterItem>
+      <FilterItem selected={false}>Canecas</FilterItem>
     </FilterList>
   )
 }

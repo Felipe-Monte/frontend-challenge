@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { FilterItemProps } from "./index"
+
 export const FilterList = styled.ul`
   display: flex;
   align-items: center;
@@ -7,12 +9,14 @@ export const FilterList = styled.ul`
   gap: 40px;
 `
 
-export const FilterItems = styled.li`
+export const FilterItem = styled.li<FilterItemProps>`
   font-family: inherit;
-  font-weight: 400;
+  font-weight: ${props => props.selected ? "600" : "400"};
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
 
   color: var(--text-dark);
+
+  border-bottom: ${props => props.selected ? "4px solid var(--orange-low)" : ""};
 `
