@@ -7,6 +7,7 @@ export const FilterList = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 40px;
+  list-style: none;
 `
 
 export const FilterItem = styled.li<FilterItemProps>`
@@ -15,6 +16,7 @@ export const FilterItem = styled.li<FilterItemProps>`
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: var(--text-dark);
 
