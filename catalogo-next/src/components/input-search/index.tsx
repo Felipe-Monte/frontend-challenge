@@ -1,4 +1,4 @@
-import { SearchIcon } from "../search-icon/search-icon"
+import { SearchIcon } from "./search-icon"
 import { InputHTMLAttributes } from "react"
 
 import { InputContainer } from "./styles"
