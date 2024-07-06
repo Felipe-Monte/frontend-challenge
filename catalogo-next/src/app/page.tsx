@@ -5,7 +5,7 @@ import { FilterBar } from "@/components/filter-bar";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <FilterBar/>
+      <FilterBar />
     </main>
   );
 }

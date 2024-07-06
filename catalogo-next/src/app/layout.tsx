@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import { FilterContextProvider } from "@/context/filter-context";
 
-const saira = Saira({ 
-  weight: ['300', '400','500','600'],
-  subsets: ["latin"] }
-);
+const saira = Saira({
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={saira.className}>
         <FilterContextProvider>
-          <Header/>
+          <Header />
           {children}
         </FilterContextProvider>
       </body>

@@ -1,40 +1,40 @@
-"use client"
-import { useFilter } from "@/hooks/useFilter"
-import { FilterList } from "./styles"
-import { FilterItem } from "./styles"
-import { FilterType } from "@/types/filter-types"
+"use client";
+import { useFilter } from "@/hooks/useFilter";
+import { FilterList } from "./styles";
+import { FilterItem } from "./styles";
+import { FilterType } from "@/types/filter-types";
 
 export interface FilterItemProps {
-  selected: boolean
+  selected: boolean;
 }
 
-export function FilterByType(){
-  const {type, setType} = useFilter()
+export function FilterByType() {
+  const { type, setType } = useFilter();
 
   const handleChangeType = (value: FilterType) => {
-    setType(value)
-  }
+    setType(value);
+  };
 
-  return(
+  return (
     <FilterList>
-      <FilterItem 
-        selected={type === FilterType.ALL} 
+      <FilterItem
+        selected={type === FilterType.ALL}
         onClick={() => handleChangeType(FilterType.ALL)}
       >
         Todos os produtos
       </FilterItem>
-      <FilterItem 
-        selected={type === FilterType.SHIRT} 
+      <FilterItem
+        selected={type === FilterType.SHIRT}
         onClick={() => handleChangeType(FilterType.SHIRT)}
       >
         Camisetas
       </FilterItem>
-      <FilterItem 
-        selected={type === FilterType.MUG} 
+      <FilterItem
+        selected={type === FilterType.MUG}
         onClick={() => handleChangeType(FilterType.MUG)}
       >
         Canecas
       </FilterItem>
     </FilterList>
-  )
+  );
 }
