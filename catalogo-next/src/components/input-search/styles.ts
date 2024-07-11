@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 export const InputSearch = styled.input`
   width: 352px;
@@ -15,7 +15,7 @@ export const InputSearch = styled.input`
 
   background-color: var(--bg-secondary);
   color: var(--text-dark);
-`
+`;
 
 export const InputContainer = styled.div`
   position: relative;
@@ -31,4 +31,4 @@ export const InputContainer = styled.div`
     top: 50%;
     transform: translateY(-50%);
   }
-`
+`;

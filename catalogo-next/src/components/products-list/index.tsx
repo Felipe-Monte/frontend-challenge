@@ -10,9 +10,9 @@ export function ProductsList() {
       {data?.map((product) => (
         <ProductCard
           key={product.id}
-          image={product.image_url} 
-          title={product.name} 
-          price={product.price_in_cents} 
+          image={product.image_url}
+          title={product.name}
+          price={product.price_in_cents}
         />
       ))}
     </Container>

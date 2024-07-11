@@ -8,8 +8,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard(props: ProductCardProps) {
-
-  const price = formatValue(props.price)
+  const price = formatValue(props.price);
 
   return (
     <Container>
