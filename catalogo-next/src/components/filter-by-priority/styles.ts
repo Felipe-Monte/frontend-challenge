@@ -34,6 +34,7 @@ export const PriorityFilter = styled.ul`
   border-radius: 4px;
 
   padding: 12px 16px;
+  z-index: 999;
 
   list-style: none;
 
